@@ -1,0 +1,84 @@
+body {
+    background-color: var(--sys-color-roles-roles-neutral-surface);
+    color: var(--sys-color-roles-roles-neutral-on-surface);
+    font-family: var(--sys-font-body-body-medium-font-family), sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: var(--sys-color-roles-roles-neutral-surface-container-lowest);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-title {
+    font-size: var(--sys-font-headline-headline-small-font-size);
+    font-weight: var(--sys-font-headline-headline-small-font-weight);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: var(--sys-font-label-label-medium-font-size);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--sys-color-roles-roles-neutral-variant-outline);
+    border-radius: 4px;
+    font-size: var(--sys-font-body-body-medium-font-size);
+    background-color: var(--sys-color-roles-roles-neutral-surface);
+    color: var(--sys-color-roles-roles-neutral-on-surface);
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--sys-color-roles-roles-primary-role-primary);
+    box-shadow: 0 0 0 2px var(--sys-color-roles-roles-primary-role-primary-container);
+}
+
+.form-group input:hover {
+    border-color: var(--sys-color-roles-roles-neutral-variant-on-surface-variant);
+}
+
+.cta-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--sys-color-roles-roles-primary-role-primary);
+    color: var(--sys-color-roles-roles-primary-role-on-primary);
+    border: none;
+    border-radius: 4px;
+    font-size: var(--sys-font-label-label-large-font-size);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.cta-button:hover {
+    background-color: var(--sys-color-roles-roles-primary-role-surface-tint);
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}
+
+.cta-button:focus {
+    outline: 2px solid var(--sys-color-roles-roles-primary-role-primary-container);
+    outline-offset: 2px;
+}
